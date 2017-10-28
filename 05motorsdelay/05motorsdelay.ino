@@ -27,7 +27,7 @@ void loop() {
     if (motorOn) {
       digitalWrite(motorPin1, HIGH);
       digitalWrite(motorPin2, HIGH);
-    } else {
+      delay(2000);
       digitalWrite(motorPin1, LOW);
       digitalWrite(motorPin2, LOW);
     }

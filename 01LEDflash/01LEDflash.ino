@@ -1,5 +1,5 @@
 // Initalize your global variables here 
-const int ledPin = 12;
+const int ledPin = 11;
 
 /* Set up code that will only run once goes here.
  *  

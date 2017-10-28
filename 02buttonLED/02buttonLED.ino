@@ -1,6 +1,6 @@
 // Initalize your global variables here 
-const int ledPin = 12;
-const int buttonPin = 2;
+const int ledPin = 11;
+const int buttonPin = 8;
 
 int buttonState = 0;
 bool ledOn = false;
@@ -17,12 +17,16 @@ void setup() {
  *  logic of your program here.
  */
 void loop() {
+
+  buttonState = digitalRead(buttonPin);
+  
   if (buttonState == HIGH) {
+    ledOn = !ledOn;
     if (ledOn) {
       digitalWrite(ledPin, HIGH);
     } else {
       digitalWrite(ledPin, LOW);
     }
-    delay(1000);
+    delay(500);
   }
 }
